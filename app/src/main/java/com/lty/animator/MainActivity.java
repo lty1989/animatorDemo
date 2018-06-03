@@ -1,16 +1,11 @@
 package com.lty.animator;
 
 import android.os.Bundle;
-import android.widget.Button;
 
-import butterknife.BindView;
 import butterknife.OnClick;
 
 public class MainActivity extends BaseActivity {
 
-
-    @BindView(R.id.btnShake)
-    Button shakeBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,5 +20,15 @@ public class MainActivity extends BaseActivity {
     @OnClick(R.id.btnShake)
     public void shake() {
         ShakeActivity.start(this);
+    }
+
+    @OnClick(R.id.btnChannel)
+    public void channel() {
+        ChannelActivity.start(this);
+    }
+
+    @OnClick(R.id.btnFocused)
+    public void focused() {
+        FocusedActivity.start(this);
     }
 }

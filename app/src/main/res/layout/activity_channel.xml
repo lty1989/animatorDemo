@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChannelActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/view1"
+        android:layout_width="300px"
+        android:layout_height="match_parent"
+        android:translationX="-820px"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/view2"
+        android:layout_width="520px"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/view1"
+        android:translationX="-820px"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/view3"
+        android:layout_width="600px"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/view2"
+        android:translationX="-820px"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="40px"
+        android:layout_height="40px"
+        android:layout_alignRight="@+id/view1"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_launcher"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

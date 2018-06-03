@@ -11,7 +11,7 @@ import butterknife.ButterKnife;
  * Version : 1.0
  * Description :
  */
-public class BaseActivity extends AppCompatActivity {
+public abstract class BaseActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -20,7 +20,5 @@ public class BaseActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    protected int getLayoutId() {
-        return -1;
-    }
+    protected abstract int getLayoutId();
 }

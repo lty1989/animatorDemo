@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FocusedActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/view1"
+        android:layout_width="300px"
+        android:layout_height="match_parent"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/view2"
+        android:layout_width="520px"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/view1"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/view3"
+        android:layout_width="600px"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/view2"/>
+
+    <Button
+        android:id="@+id/focused"
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:background="@android:color/holo_blue_bright"/>
+
+
+</RelativeLayout>
