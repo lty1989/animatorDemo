@@ -12,6 +12,12 @@ public class MainActivity extends BaseActivity {
     @BindView(R.id.btnShake)
     Button shakeBtn;
 
+    @BindView(R.id.btnSlide)
+    Button slideBtn;
+
+    @BindView(R.id.btnTVSlide)
+    Button tvSlideBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,5 +31,15 @@ public class MainActivity extends BaseActivity {
     @OnClick(R.id.btnShake)
     public void shake() {
         ShakeActivity.start(this);
+    }
+
+    @OnClick(R.id.btnSlide)
+    public void slide() {
+        SlideActivity.start(this);
+    }
+
+    @OnClick(R.id.btnTVSlide)
+    public void tvSlide() {
+        TVSlideActivity.start(this);
     }
 }
