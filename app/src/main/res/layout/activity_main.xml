@@ -7,11 +7,33 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+
+    <Button
+        android:id="@+id/btnLive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Live"
+        android:textSize="25sp"/>
+
     <Button
         android:id="@+id/btnShake"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Shake"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search"
         android:textSize="25sp"/>
 
     <Button
@@ -26,6 +48,42 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TVSlide"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/btnChannel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Channel"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/btnFocused"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Focused"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/btnConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Constraint"
+        android:textSize="25sp"/>
+
+
+    <Button
+        android:id="@+id/btnFront"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Front"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/btnProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Progress"
         android:textSize="25sp"/>
 
 </LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="110dp"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/btn1"/>
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btn1"/>
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/btn3"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/btn3"/>
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/btn3"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/btn4"/>
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/btn3"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/btn5"/>
+
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/btn6"/>
+
+    <Button
+        android:id="@+id/btn8"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn7"/>
+
+    <Button
+        android:id="@+id/btn9"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn7"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/btn8"/>
+
+
+</RelativeLayout>

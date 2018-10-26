@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FontActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="italic 看效果"
+        android:textSize="30sp"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bold 看效果"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="normal 看效果"
+        android:textSize="30sp"
+        android:textStyle="normal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="monospace 看效果"
+        android:textSize="30sp"
+        android:typeface="monospace"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sans 看效果"
+        android:textSize="30sp"
+        android:typeface="sans"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="serif 看效果"
+        android:textSize="30sp"
+        android:typeface="serif"/>
+
+    <TextView
+        android:id="@+id/sc_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="思源 看效果"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/rb_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="roboto 看效果"
+        android:textSize="30sp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NetworkErrorView">
+        <attr name="error_icon" format="reference"/>
+        <attr name="error_content" format="string"/>
+        <attr name="error_fun1" format="string"/>
+        <attr name="error_fun2" format="string"/>
+
+    </declare-styleable>
+
+
+</resources>

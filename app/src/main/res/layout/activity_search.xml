@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/inputTv"
+            android:layout_width="650px"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="请输入 片名/人名 首字母 进行搜索"/>
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="320px"
+            android:layout_height="100px"
+            android:layout_below="@+id/inputTv"
+            android:text="清除"/>
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="320px"
+            android:layout_height="100px"
+            android:layout_alignTop="@+id/clear"
+            android:layout_marginLeft="10px"
+            android:layout_toRightOf="@+id/clear"
+            android:text="退格"/>
+
+        <com.lty.animator.search.KeyboardView
+            android:id="@+id/keyboardView"
+            android:layout_width="650px"
+            android:layout_height="650px"
+            android:layout_below="@+id/clear"/>
+
+        <TextView
+            android:id="@+id/hotTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/keyboardView"
+            android:text="热门搜索"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/hotRv"
+            android:layout_width="480px"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/hotTitle"
+            android:layout_below="@+id/hotTitle"/>
+
+        <TextView
+            android:id="@+id/resultTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/hotRv"
+            android:text="为你推荐"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="480px"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/resultTitle"
+            android:layout_below="@+id/resultTitle"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
